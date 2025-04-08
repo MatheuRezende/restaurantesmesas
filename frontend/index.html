@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurante Sabor & Arte</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🍽️ Sabor & Arte</div>
+    <nav>
+      <ul>
+        <li><a href="#" data-secao="home">Início</a></li>
+        <li><a href="#" data-secao="mesas">Mesas</a></li>
+        <li><a href="#" data-secao="cardapio">Cardápio</a></li>
+        <li><a href="#" data-secao="contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="secao ativa">
+    <h1>Bem-vindo ao Restaurante Sabor & Arte</h1>
+    <p>Desfrute da melhor culinária com atendimento de qualidade!</p>
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Imagem Restaurante">
+  </section>
+
+  <section id="mesas" class="secao">
+    <h2>Mesas Disponíveis</h2>
+    <a href="#mesas" class="botao" onclick="carregarMesas()">Carregar Mesas</a>
+    <div id="mesas-container"></div>
+  </section>
+
+  <section id="cardapio" class="secao">
+    <h2>Cardápio</h2>
+    <button onclick="carregarCardapio()">Carregar Cardápio</button>
+    <div id="cardapio-container"></div>
+  </section>
+
+  <section id="contato" class="secao">
+    <h2>Contato</h2>
+    <p>📞 (11) 1234-5678</p>
+    <p>📧 contato@saborear.com</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
